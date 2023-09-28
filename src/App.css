@@ -1,0 +1,62 @@
+/* src/App.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url('mypics/image1.jpg'); /* Adjust the path to your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 200px; /* Increase the height as needed */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  padding: 0 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-logo {
+  max-height: 100px; /* Adjust logo height as needed */
+}
+
+.navbar-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  margin-right: 20px;
+}
+
+.navbar-item:last-child {
+  margin-right: 0;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center; /* Center the content vertically for small screens */
+    padding: 10px;
+    height: auto; /* Reset height for small screens */
+  }
+
+  .navbar-logo {
+    max-height: 40px; /* Adjust logo height for small screens */
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+  }
+
+  .navbar-item {
+    margin: 10px 0;
+  }
+}

@@ -44,6 +44,7 @@ const closeMobileMenu = () => setClick(false);
                 </Link>
               </li>
             </ul>
+            {button && <Button>SIGN UP</Button>}
         </div>
       </nav>
     </>
